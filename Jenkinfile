@@ -88,7 +88,7 @@ pipeline {
             steps {
                 script {
                 withDockerRegistry(credentialsId: 'docker-cred', toolName: 'docker') {
-                 sh "docker run -d -P ifty786/bloggingapp:latest"
+                 sh "docker run -d -p 3001:8080 ifty786/bloggingapp:latest"
                   }
                 }
             }
