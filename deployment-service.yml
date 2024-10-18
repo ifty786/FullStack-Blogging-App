@@ -17,7 +17,7 @@ spec:
           image: adijaiswal/bloggingapp:latest # Updated image to private DockerHub image
           imagePullPolicy: Always
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
       imagePullSecrets:
         - name: regcred # Reference to the Docker registry secret
 ---
@@ -31,5 +31,5 @@ spec:
   ports:
     - protocol: "TCP"
       port: 80
-      targetPort: 8080 
+      targetPort: 3000
   type: LoadBalancer
