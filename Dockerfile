@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk-alpine
     
-EXPOSE 3000
+EXPOSE 3001
  
 ENV APP_HOME /usr/src/app
 
